@@ -1,6 +1,5 @@
 subroutine write_a_snapshot
 !
-! pcc = 18/10/2010
 !
 ! Writes the snapshots in the same format as the ic file, but can have extra
 ! information stored in the header (means that snapshots can be used as ics).
