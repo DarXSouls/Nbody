@@ -1,7 +1,6 @@
 subroutine initialise_run
 
 !
-! pcc 18/10/2020
 !
 ! sets lots of parameters before we start
 !
