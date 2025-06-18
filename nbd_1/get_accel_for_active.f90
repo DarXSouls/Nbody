@@ -1,6 +1,5 @@
 subroutine get_accel_for_active(N, N_act, i_active, x, y, z, vx, vy, vz, m, soft, ax, ay, az, axdot, aydot, azdot, radii)
 !
-! pcc - 18/10/2020
 !
 ! This subroutine returns the accelations, based on the current position,
 ! velocity, mass, and softening.
