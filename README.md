@@ -1,1 +1,133 @@
-# Nbody
+# Impact of Virial Ratios on Mass Segregation and Binary Formation in Young Stellar Clusters
+
+![Language](https://img.shields.io/badge/language-Fortran-blue.svg)
+![Status](https://img.shields.io/badge/status-Completed-green.svg)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+## 🌌 Overview
+
+This project investigates the influence of virial ratios on the **dynamical evolution**, **mass segregation**, and **binary formation** in small, young stellar clusters through N-body simulations. The simulations were conducted as part of a master's dissertation at Cardiff University.
+
+- **Cluster size**: 70 stars  
+- **Cluster setup**: Fractal method by Goodwin & Whitworth (2004)  
+- **Mass sampling**: Chabrier IMF  
+- **Integrator**: 4th Order Hermite with global time-step  
+- **Virial Ratios**: 0.5, 1.0, 1.5, 2.0  
+- **Outputs**: Stellar positions, velocities, mass segregation index (Λ<sub>MSR</sub>), binary count evolution, and clustering metrics.
+
+## 📂 Repository Structure
+
+```bash
+Nbody/
+├── src/                  # Source code in Fortran
+├── data/                 # Input mass samples and initial condition files
+├── output/               # Simulation snapshots and logs
+├── scripts/              # Python analysis tools
+├── Makefile              # Build script
+├── README.md             # Project documentation
+└── Masters_thesis.pdf    # Project report and full methodology
+```
+
+## 🧪 Methodology
+
+### Initial Cluster Generation
+- Built using a **fractal sub-structured distribution** to model clumpy star-forming regions.
+- Masses drawn from **Chabrier Initial Mass Function (IMF)**.
+- Initial velocities adjusted to center-of-mass frame and scaled to achieve desired virial ratios.
+
+### N-Body Integration
+- **Hermite 4th Order P(EC)n scheme** with global time stepping.
+- Predict-correct scheme includes calculation of acceleration and its time derivative.
+- Code simulates purely gravitational interactions (no gas or dissipative forces).
+
+### Simulation Parameters
+| Virial Ratio | Total Mass (M☉) | Evolution Time (Myr) |
+|--------------|------------------|-----------------------|
+| 0.5          | 24.15            | 88.0                  |
+| 1.0          | 24.02            | 125.4                 |
+| 1.5          | 24.44            | 152.5                 |
+| 2.0          | 23.93            | 177.6                 |
+
+## 📊 Key Results
+
+- **Mass Segregation**:  
+  - Quantified using Λ<sub>MSR</sub> via the minimum spanning tree method.
+  - Clusters with lower virial ratios exhibit earlier and stronger mass segregation.
+
+- **Binary Formation**:  
+  - Identified using binding energy criterion.
+  - Dynamically cold clusters form binaries early but disrupt them quickly.
+  - High virial ratio clusters form fewer, but more **long-lived and stable binaries**.
+
+- **Clustering Evolution**:  
+  - Studied using INDICATE index (nearest-neighbour-based clustering metric).
+  - High virial ratio clusters show slower spatial evolution and delayed sub-cluster formation.
+
+## 📦 Requirements
+
+### Fortran Compilation
+- `gfortran` (tested with version 13.2.0)
+- `make`
+
+### Python Dependencies (for analysis)
+- `numpy`
+- `scipy`
+- `matplotlib`
+- `pandas`
+- `plotly` *(optional for 3D visualization)*
+
+Install using:
+
+```bash
+pip install numpy scipy matplotlib pandas plotly
+```
+
+## ⚙️ How to Run
+
+### Compile the Code
+```bash
+cd src/
+make
+```
+
+### Run a Simulation
+Make sure your input files (`ics.dat`, `mass_sample6.dat`) are in the working directory. Then:
+```bash
+./nbd
+```
+
+### Analyze with Python Scripts
+After the simulation:
+```bash
+cd scripts/
+python analyze_mass_segregation.py
+python analyze_binaries.py
+```
+
+## 📚 References
+
+Key works referenced in the implementation:
+
+- Goodwin & Whitworth (2004) – Fractal cluster generation
+- Chabrier (2003) – Initial Mass Function
+- Makino & Aarseth (1992) – Hermite Integrator
+- Allison et al. (2009) – Λ<sub>MSR</sub> for Mass Segregation
+- Heggie (1975) – Binary evolution in N-body systems
+
+## 🙏 Acknowledgements
+
+This work was conducted at the **School of Physics and Astronomy, Cardiff University**. The initial codebase for the N-body integration was adapted from routines provided by **Dr. Paul Clark**. Additional project input was provided by **Adon Varghese**.
+
+> *Note: My supervisor did not respond to recent inquiries, but their initial guidance during the project is acknowledged with gratitude.*
+
+## 📜 License
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute this work with proper citation.
+
+## 🔭 Contact
+
+For questions or collaborations:
+
+**Shyam Chinta**  
+Email: [Add your email]  
+GitHub: [@DarXSouls](https://github.com/DarXSouls)
