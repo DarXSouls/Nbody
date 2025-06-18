@@ -1,7 +1,6 @@
 program nbd
 
 !
-! pcc - 18/10/2020
 !
 ! N-Body Dynamics (NBD) code with at least 4th order Hermite.
 !
