@@ -1,7 +1,6 @@
 subroutine diagnostics(diagnostic_mode)
 
 !
-! pcc - 19/10/2020
 !
 ! This code prints out things that the user might like to know, such as information 
 ! on timesteps, energy, momentum, (V)COM, masses. We've got two modes:
