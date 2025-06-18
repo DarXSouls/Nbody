@@ -116,9 +116,8 @@ Key works referenced in the implementation:
 
 ## 🙏 Acknowledgements
 
-This work was conducted at the **School of Physics and Astronomy, Cardiff University**. The initial codebase for the N-body integration was adapted from routines provided by **Dr. Paul Clark**. Additional project input was provided by **Adon Varghese**.
+This work was conducted at the **School of Physics and Astronomy, Cardiff University**. The initial codebase for the N-body integration was adapted from routines provided by **Dr. Paul Clark**. The initial guidance during the project is acknowledged with gratitude.
 
-> *Note: My supervisor did not respond to recent inquiries, but their initial guidance during the project is acknowledged with gratitude.*
 
 ## 📜 License
 
