@@ -20,7 +20,7 @@ This project investigates the influence of virial ratios on the **dynamical evol
 ```bash
 Nbody/
 ├── nbd/                  # Source code in Fortran
-├── fractal_distribution  # Cluster design and initial condition files
+├── fractal_distribution/ # Cluster design and initial condition files
 ├── Analysis/             # Python analysis tools
 ├── README.md             # Project documentation
 └── Masters_thesis.pdf    # Project report and full methodology
@@ -79,7 +79,11 @@ Nbody/
 
 ### Compile the Code
 ```bash
-cd src/
+cd nbd/
+make
+```
+```bash
+cd fractal_distribution/
 make
 ```
 
