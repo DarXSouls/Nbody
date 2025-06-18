@@ -137,7 +137,7 @@ Key works referenced in the implementation:
 - Allison et al. (2009) – Λ<sub>MSR</sub> for Mass Segregation
 - Heggie (1975) – Binary evolution in N-body systems
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 This work was conducted at the **School of Physics and Astronomy, Cardiff University**. The initial codebase for the N-body integration was adapted from routines provided by **Dr. Paul Clark**. The initial guidance during the project is acknowledged with gratitude.
 
