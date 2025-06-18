@@ -1,6 +1,5 @@
 subroutine get_accel_info(N, x, y, z, vx, vy, vz, m, soft, ax, ay, az, axdot, aydot, azdot)
 !
-! pcc - 18/10/2020
 !
 ! This subroutine returns the accelations, based on the current position,
 ! velocity, mass, and softening.
