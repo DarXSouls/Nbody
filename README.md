@@ -142,9 +142,6 @@ Key works referenced in the implementation:
 This work was conducted at the **School of Physics and Astronomy, Cardiff University**. The initial codebase for the N-body integration was adapted from routines provided by **Dr. Paul Clark**. The initial guidance during the project is acknowledged with gratitude.
 
 
-## 📜 License
-
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute this work with proper citation.
 
 ## 🔭 Contact
 
