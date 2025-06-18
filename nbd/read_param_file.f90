@@ -1,7 +1,6 @@
 subroutine read_param_file
 
 !
-! pcc: 18/10/2020
 !
 ! Reads the parameter file. Note that 'parameters' here are actually fortran
 ! variables, since they are not set at compile time (unlike true fortran parameters).
