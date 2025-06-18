@@ -1,7 +1,6 @@
 subroutine get_energies_and_momentum
 
 !
-! pcc - 18/10/2020
 !
 
 use global_variables
