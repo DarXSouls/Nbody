@@ -19,11 +19,9 @@ This project investigates the influence of virial ratios on the **dynamical evol
 
 ```bash
 Nbody/
-├── src/                  # Source code in Fortran
-├── data/                 # Input mass samples and initial condition files
-├── output/               # Simulation snapshots and logs
-├── scripts/              # Python analysis tools
-├── Makefile              # Build script
+├── nbd/                  # Source code in Fortran
+├── fractal_distribution  # Cluster design and initial condition files
+├── Analysis/             # Python analysis tools
 ├── README.md             # Project documentation
 └── Masters_thesis.pdf    # Project report and full methodology
 ```
@@ -76,11 +74,6 @@ Nbody/
 - `pandas`
 - `plotly` *(optional for 3D visualization)*
 
-Install using:
-
-```bash
-pip install numpy scipy matplotlib pandas plotly
-```
 
 ## ⚙️ How to Run
 
@@ -96,13 +89,6 @@ Make sure your input files (`ics.dat`, `mass_sample6.dat`) are in the working di
 ./nbd
 ```
 
-### Analyze with Python Scripts
-After the simulation:
-```bash
-cd scripts/
-python analyze_mass_segregation.py
-python analyze_binaries.py
-```
 
 ## 🔍 Analysis & Visualization Tools
 
@@ -149,9 +135,8 @@ Key works referenced in the implementation:
 
 ## 🙏 Acknowledgements
 
-This work was conducted at the **School of Physics and Astronomy, Cardiff University**. The initial codebase for the N-body integration was adapted from routines provided by **Dr. Paul Clark**. Additional project input was provided by **Adon Varghese**.
+This work was conducted at the **School of Physics and Astronomy, Cardiff University**. The initial codebase for the N-body integration was adapted from routines provided by **Dr. Paul Clark**. The initial guidance during the project is acknowledged with gratitude.
 
-> *Note: My supervisor did not respond to recent inquiries, but their initial guidance during the project is acknowledged with gratitude.*
 
 ## 📜 License
 
@@ -162,5 +147,5 @@ This project is licensed under the **MIT License**. You are free to use, modify,
 For questions or collaborations:
 
 **Shyam Chinta**  
-Email: [Add your email]  
+Email: [shyamgirishchinta@gmail.com]  
 GitHub: [@DarXSouls](https://github.com/DarXSouls)
