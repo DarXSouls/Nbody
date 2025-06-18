@@ -94,6 +94,15 @@ Make sure your input files (`ics.dat`, `mass_sample6.dat`) are in the working di
 ```
 
 
+## Parallelization and Performance
+
+To improve performance and reduce simulation time, this project includes basic parallelization using OpenMP for multi-core CPU execution.
+
+
+
+
+
+
 ## 🔍 Analysis & Visualization Tools
 
 Your post-processing pipeline in Python builds upon the N-body simulation data to extract physical insights and visualize the cluster’s evolution.
